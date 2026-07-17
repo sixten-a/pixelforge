@@ -1,128 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PixelForge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelForge</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#111827;
-    color:white;
-}
-
-header{
-    background:#1f2937;
-    padding:20px;
-    text-align:center;
-}
-
-header h1{
-    margin:0;
-    color:#38bdf8;
-}
-
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
-
-.hero h2{
-    font-size:40px;
-}
-
-.hero p{
-    color:#cbd5e1;
-}
-
-.products{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:40px;
-}
-
-.card{
-    background:#1e293b;
-    width:280px;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-}
-
-.card h3{
-    color:#38bdf8;
-}
-
-.price{
-    font-size:28px;
-    margin:15px 0;
-}
-
-.buy{
-    display:inline-block;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:black;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.buy:hover{
-    background:#0ea5e9;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#94a3b8;
-}
-</style>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-<h1>PixelForge</h1>
+    <nav>
+        <div class="logo">PixelForge</div>
+
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="products.html">Tuotteet</a></li>
+            <li><a href="cart.html">Ostoskori</a>
+        </ul>
+    </nav>
 </header>
 
 <section class="hero">
-<h2>Digital Products for Gamers & Creators</h2>
-<p>Instant downloads. Simple payments. No waiting.</p>
+    <h1>Digital Products for Gamers</h1>
+
+    <p>
+        Minecraft Maps, Music, PDF Guides and more.
+    </p>
+
+    <a class="button" href="products.html">
+        Shop Now
+    </a>
 </section>
 
-<section class="products">
-
-<div class="card">
-<h3>Minecraft World Pack</h3>
-<p>Awesome custom Minecraft worlds.</p>
-<div class="price">€2.99</div>
-<a class="buy" href="#">Buy</a>
-</div>
-
-<div class="card">
-<h3>PDF Guide</h3>
-<p>Easy guide full of useful tips.</p>
-<div class="price">€1.99</div>
-<a class="buy" href="#">Buy</a>
-</div>
-
-<div class="card">
-<h3>Texture Pack</h3>
-<p>Beautiful textures for Minecraft.</p>
-<div class="price">€3.99</div>
-<a class="buy" href="#">Buy</a>
-</div>
-
-</section>
-
-<footer>
-© 2026 PixelForge
-</footer>
+<script src="js/app.js"></script>
 
 </body>
 </html>

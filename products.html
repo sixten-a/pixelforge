@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuotteet - PixelForge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">PixelForge</div>
+
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="products.html">Tuotteet</a></li>
+            <li><a href="checkout.html">Ostoskori 🛒</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Tuotteet</h1>
+    <p>Valitse haluamasi digitaaliset tuotteet.</p>
+</section>
+
+<div class="products">
+
+    <div class="product">
+        <h2>Minecraft Puzzle Map</h2>
+        <p>Hauska puzzle-seikkailukartta Minecraftiin.</p>
+        <h3>5 €</h3>
+        <button onclick="addToCart('Minecraft Puzzle Map',5)">
+            Lisää ostoskoriin
+        </button>
+    </div>
+
+    <div class="product">
+        <h2>Minecraft Maze Map</h2>
+        <p>Vaikea sokkelokartta.</p>
+        <h3>3 €</h3>
+        <button onclick="addToCart('Minecraft Maze Map',3)">
+            Lisää ostoskoriin
+        </button>
+    </div>
+
+    <div class="product">
+        <h2>Music Pack</h2>
+        <p>Alkuperäistä musiikkia videoihin ja peleihin.</p>
+        <h3>1 €</h3>
+        <button onclick="addToCart('Music Pack',1)">
+            Lisää ostoskoriin
+        </button>
+    </div>
+
+</div>
+
+<script src="js/cart.js"></script>
+
+</body>
+</html>

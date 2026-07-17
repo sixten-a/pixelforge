@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ostoskori</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">PixelForge</div>
+
+<ul>
+<li><a href="index.html">Etusivu</a></li>
+<li><a href="products.html">Tuotteet</a></li>
+
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>Ostoskori</h1>
+
+<div id="cartItems"></div>
+
+<h2 id="total"></h2>
+
+<br>
+
+<a class="button" href="checkout.html">
+Siirry kassalle →
+</a>
+
+</section>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let html = "";
+let total = 0;
+
+cart.forEach(item => {
+
+html += `
+<p>${item.name} - ${item.price} €</p>
+`;
+
+total += item.price;
+
+});
+
+document.getElementById("cartItems").innerHTML = html;
+document.getElementById("total").innerHTML = "Yhteensä: " + total + " €";
+
+</script>
+
+</body>
+</html>
