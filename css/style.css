@@ -92,3 +92,7 @@ nav a {
     margin-bottom: 20px;
     font-size: 20px;
 }
+.logo img {
+    height: 60px;
+    width: auto;
+}
